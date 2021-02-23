@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "c44f5a0a-1553-4ade-ab58-1a2c572bf1d7",
+		"name": "Blockchain Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Gateway Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Service Processor Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/v1.0/processor/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1.0",
+						"processor",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account Balance for Token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/v1.0/processor/accounts/:account/balance?token=0x1985365e9f78359a9b6ad760e32412f4a445e862",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1.0",
+						"processor",
+						"accounts",
+						":account",
+						"balance"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "0x1985365e9f78359a9b6ad760e32412f4a445e862",
+							"description": "the token address"
+						}
+					],
+					"variable": [
+						{
+							"key": "account",
+							"value": "0xde51c920988def4fecfa6a126edddde86629c3e0",
+							"description": "the account address"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Average Token Transfer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/v1.0/processor/tokens/:token?type=average",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1.0",
+						"processor",
+						"tokens",
+						":token"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "average",
+							"description": "could be average or median"
+						}
+					],
+					"variable": [
+						{
+							"key": "token",
+							"value": "0x1985365e9f78359a9b6ad760e32412f4a445e862",
+							"description": "the token address"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account with Highest Token Balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/v1.0/processor/accounts/highestBalance?token=0x1985365e9f78359a9b6ad760e32412f4a445e862",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1.0",
+						"processor",
+						"accounts",
+						"highestBalance"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "0x1985365e9f78359a9b6ad760e32412f4a445e862"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account With Most Token Transfers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/v1.0/processor/accounts/mostTransfers?token=0x1985365e9f78359a9b6ad760e32412f4a445e862",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1.0",
+						"processor",
+						"accounts",
+						"mostTransfers"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "0x1985365e9f78359a9b6ad760e32412f4a445e862"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

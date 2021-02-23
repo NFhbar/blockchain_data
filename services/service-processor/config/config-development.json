@@ -1,0 +1,8 @@
+{
+	"SERVERPORT": "9000",
+	"PGUSER": "postgres",
+	"PGHOST": "host.docker.internal",
+	"PGDATABASE": "postgres",
+	"PGPASSWORD": "postgres_password",
+	"PGPORT": "9001"
+}

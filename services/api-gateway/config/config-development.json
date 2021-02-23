@@ -1,0 +1,8 @@
+{
+	"SERVERPORT": "4000",
+	"REDISHOST": "redis",
+	"REDISPORT": "6379",
+	"POINTS": "10",
+	"DURATION": "1",
+	"PROCESSOR": "http://processor:9000"
+}

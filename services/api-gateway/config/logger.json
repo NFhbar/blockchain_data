@@ -1,0 +1,10 @@
+{
+    "event": {
+        "start": "service started",
+        "error": "internal server error"
+    },
+    "info": {
+        "serverStart": "api-gateway started",
+        "error": "internal server error"
+    }
+}

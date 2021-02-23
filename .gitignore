@@ -1,0 +1,17 @@
+# DEPENDENCIES
+node_modules
+package-lock.json
+.vscode
+log
+
+# ROOT
+notes.md
+# SERVICES
+services/api-gateway/log
+services/api-gateway/node_modules
+services/api-gateway/package-lock.json
+services/service-processor/docs
+services/service-processor/log
+services/service-processor/config/database.js
+services/service-processor/node_modules
+services/service-processor/package-lock.json

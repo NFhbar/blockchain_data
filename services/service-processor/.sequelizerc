@@ -1,0 +1,16 @@
+const ENV = process.env.NODE_ENV || 'development';
+
+const returnConfigPath = (env) => {
+  if (env === "test") {
+    return 'config/database.test.js'
+  } else {
+    return 'config/database.js'
+  }
+};
+
+module.exports = {
+  config: returnConfigPath(ENV),
+  'migrations-path': 'src/infra/database/migrations',
+  'models-path': 'src/infra/database/models',
+  'seeders-path': 'src/infra/database/seeders'
+};

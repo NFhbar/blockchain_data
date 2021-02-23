@@ -1,0 +1,28 @@
+version: "3.2"
+
+services:
+
+  api-gateway:
+    build:
+      dockerfile: Dockerfile.local
+      context: ../services/api-gateway
+    # Disable logging for easier debugging
+    # logging:
+    #   driver: none
+    environment:
+      - VPC_NAME=development
+      - AWS_REGION=us-west-2
+      - PORT=4000
+    volumes:
+      - /app/node_modules
+      - ../services/api-gateway:/app
+    depends_on:
+      - redis
+    ports:
+      - '4000:4000'
+    restart: always
+
+  redis:
+    image: 'redis:latest'
+    ports:
+      - '4001:6379'

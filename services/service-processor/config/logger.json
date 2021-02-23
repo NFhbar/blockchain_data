@@ -1,0 +1,45 @@
+{
+    "event": {
+        "start": "service started",
+        "error": "internal server error",
+        "post": "post request",
+        "get": "get request"
+    },
+    "info": {
+        "serverStart": "service processor started",
+        "error": "internal server error",
+        "account": {
+            "balance": "get account balance for token",
+            "balanceError": "failed to get account balance",
+            "highestBalance": "get account with highest balance for token",
+            "highestBalanceError": "failed to get account with highest balance for token",
+            "mostTransfers": "get account with most transfers"
+        },
+        "token": {
+            "average": "get average token transfer"
+        }
+    },
+    "errors": {
+        "validationError": "ValidationError",
+        "dbError": "failed to retrieve data",
+        "account": {
+            "balanceError": "failed to get account balance for token",
+            "highestBalance": "failed to get account with highest balance for token",
+            "mostTransfersError": "get account with most transfers errors"
+        },
+        "token": {
+            "averageError": "failed to get average token transfer"
+        },
+        "validation": {
+            "invalidAccountAddress": "invalid account address format",
+            "invalidTokenAddress": "invalid token address format",
+            "invalidTypeForTokenTransfer": "invalid value for type in query. Must be average or median."
+        },
+        "transactions": {
+            "getTransactions": "failed to get transactions"
+        },
+        "ledgers": {
+            "getLedgers": "failed to get ledgers"
+        }
+    }
+}

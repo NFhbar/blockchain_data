@@ -1,0 +1,4 @@
+linters:
+  ./**/*.js:
+    - standard --fix
+    - git add -A

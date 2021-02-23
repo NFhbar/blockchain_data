@@ -93,6 +93,5 @@ export default function ({ configVars }) {
     getTokenStats: asClass(GetTokenStats)
 
   })
-
   return container
 }
